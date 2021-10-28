@@ -10,6 +10,10 @@ import { BrowserRouter as Router,
     Redirect } from 'react-router-dom';
 import { ProfileScreen } from '../pages/ProfileScreen';
 import { PhotosScreen } from '../pages/PhotosScreen';
+import { PDashboardScreen } from '../pages/PDashboardScreen';
+import { PPaymentsScreen } from '../pages/PPaymentsScreen';
+import { RegisterScreen } from '../pages/RegisterScreen';
+import { PrivateRoute } from './PrivateRoute';
 
 export const AppRouter = () => {
     return (
@@ -43,8 +47,12 @@ export const AppRouter = () => {
                         <Route exact path='/login' component={LoginScreen} />
                         <Route exact path='/profile/:username' component={ProfileScreen} />
                         <Route exact path='/photos' component={PhotosScreen} />
+                        <Route exact path='/register' component={RegisterScreen} />
+                        <PrivateRoute exact path='/dashboard' component={PDashboardScreen} />
+                        <PrivateRoute exact path='/payments' component={PPaymentsScreen} />
                         <Route exact path='/' component={HomeScreen} />
                         
+
                         <Redirect to="./home" />
                         {/* <Route path="*" component={HomeScreen} /> */}
                         {/* <Route component={HomeScreen} /> */}

@@ -11,7 +11,9 @@ export const ProfileScreen = () => {
 
     return (
         <div>
-            <h1>Username: {username}</h1>
+            <h1>ProfileScreen</h1>
+            <hr />
+            <h2>Username: {username}</h2>
         </div>
     )
 }
