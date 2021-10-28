@@ -14,6 +14,7 @@ import { PDashboardScreen } from '../pages/PDashboardScreen';
 import { PPaymentsScreen } from '../pages/PPaymentsScreen';
 import { RegisterScreen } from '../pages/RegisterScreen';
 import { PrivateRoute } from './PrivateRoute';
+import { PublicRoute } from './PublicRoute';
 
 export const AppRouter = () => {
     return (
@@ -44,10 +45,10 @@ export const AppRouter = () => {
 
                         <Route exact path='/home' component={HomeScreen} />
                         <Route exact path='/about' component={AboutScreen} />
-                        <Route exact path='/login' component={LoginScreen} />
                         <Route exact path='/profile/:username' component={ProfileScreen} />
                         <Route exact path='/photos' component={PhotosScreen} />
-                        <Route exact path='/register' component={RegisterScreen} />
+                        <PublicRoute exact path='/login' component={LoginScreen} />
+                        <PublicRoute exact path='/register' component={RegisterScreen} />
                         <PrivateRoute exact path='/dashboard' component={PDashboardScreen} />
                         <PrivateRoute exact path='/payments' component={PPaymentsScreen} />
                         <Route exact path='/' component={HomeScreen} />

@@ -19,7 +19,6 @@ export const NavBar = () => {
                     <div className="navbar-nav">
                         <NavLink exact activeClassName="active" className="nav-link" to="./home">Home</NavLink>
                         <NavLink exact activeClassName="active" className="nav-link" to="./about">About</NavLink>
-                        <NavLink exact activeClassName="active" className="nav-link" to="./login">Login</NavLink>
                         <NavLink exact activeClassName="active" className="nav-link" to="./photos">Photos</NavLink>
                         <NavLink exact activeClassName="active" className="nav-link" to="./dashboard">Dashboard</NavLink>
                         <NavLink exact activeClassName="active" className="nav-link" to="./payments">Payments</NavLink>
