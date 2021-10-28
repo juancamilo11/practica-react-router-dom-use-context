@@ -6,6 +6,7 @@ export const HomeScreen = () => {
         <div>
             <h1>HomeScreen</h1>
             <hr />
+            <p>Esta vista es accesible tanto si has iniciado sesión como si no lo has hecho aún</p>
         </div>
     )
 }

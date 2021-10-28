@@ -14,6 +14,7 @@ export const ProfileScreen = () => {
             <h1>ProfileScreen</h1>
             <hr />
             <h2>Username: {username}</h2>
+            <p>Esta vista es sólo accesible sólo mientras tienes iniciada la sesión</p>
         </div>
     )
 }

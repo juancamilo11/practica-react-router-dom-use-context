@@ -19,7 +19,7 @@ export const PhotosScreen = () => {
 
     const handleNext = () => {
         query.set('skip', skip + limit);
-        //query.set('limit', 10);
+        query.set('limit', 10);
         
         // history.push({
         //     pathname: './home',
@@ -37,6 +37,7 @@ export const PhotosScreen = () => {
             <hr />
             <p><b>Params</b> Skip:{skip}, Limit:{limit}</p>
             <button onClick={() => handleNext()}>Next Page</button>
+            <p>Esta vista es accesible tanto si has iniciado sesión como si no lo has hecho aún</p>
         </div>
     )
 }
