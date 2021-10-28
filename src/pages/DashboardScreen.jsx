@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const PDashboardScreen = () => {
+export const DashboardScreen = () => {
     return (
         <div>
             <h1>DashboardScreen (Private)</h1>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const PPaymentsScreen = () => {
+export const PaymentsScreen = () => {
     return (
         <div>
             <h1>PaymentsScreen (Private)</h1>
