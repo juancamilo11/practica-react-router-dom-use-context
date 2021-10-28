@@ -1,9 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../auth/useAuth';
 
 
 
 export const NavBar = () => {
+
+    const auth = useAuth();
+
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             <div className="container-fluid">
@@ -21,6 +25,7 @@ export const NavBar = () => {
                         <NavLink exact activeClassName="active" className="nav-link" to="./payments">Payments</NavLink>
                         <NavLink exact activeClassName="active" className="nav-link" to="./login">Login</NavLink>
                         <NavLink exact activeClassName="active" className="nav-link" to="./register">Register</NavLink>
+                        <button className="btn btn-danger" onClick={() => auth.logout()}>Logout</button>
                     </div>
                 </div>
             </div>
